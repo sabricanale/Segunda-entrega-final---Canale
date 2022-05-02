@@ -1,0 +1,126 @@
+body{
+    font-family: "Josefin Sans";
+}
+.navbar{
+
+background-color: white !important; 
+}
+
+footer{
+    min-height: 100px;
+}
+
+footer p{
+    text-align: center;
+}  
+
+footer p a {
+    text-decoration: none;
+    color: rgb(248, 159, 174);
+}
+
+footer p a:hover{
+    color:black;
+}
+
+
+
+#iconos i{
+    font-size: 20px;
+    padding: 0 8px;
+    text-decoration: none;
+    color:gray;
+
+} 
+
+#iconos i:hover{
+    color:black;
+}
+
+
+.btn {
+    width: auto;
+    height: auto;
+    background-color: gray;
+    animation-name: mianimacion;
+    animation-duration:5s;
+    animation-delay: 2s;
+    position: relative;
+    
+}
+
+.btn a{
+    text-decoration: none;
+    color:white;
+    animation-name: letrasAnimacion;
+    animation-duration:5s;
+    animation-delay: 2s;
+    position: relative;
+
+}
+
+
+@keyframes letrasAnimacion{
+    0%: {color:white}
+    50% {color:black}
+    100% {color:white}
+
+}
+
+#titulo {
+    transform:rotateY(360deg);
+    transition: transform 5s;
+    animation-delay: 2s;   
+}
+
+#titulo2 {
+    transform:rotateY(360deg);
+    transition: transform 5s;
+    animation-delay: 2s;   
+}
+
+
+@keyframes mianimacion {
+  
+    0%{background-color: gray;}
+    50%{background-color: pink; color:black}
+    100%{background-color: gray;}
+
+}
+
+
+
+
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+
+   
+
+
+}
+
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+
+@media (min-width:992px){
+    .collapse{
+        display: flex;
+        justify-content: end !important;
+    }
+
+}
+
+   
+
+
